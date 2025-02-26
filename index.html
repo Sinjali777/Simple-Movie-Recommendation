@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="container">
+            <h1>Simple Movies List</h1>
+            <p>Track movie recommendation from users.</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search by movie name" >
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+        <table id="movie-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Name of Movie</th>
+                    <th onclick="sortTable(1)">Movie Rating(Out of ten)</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Dynamic rows will be added here -->
+                <tr>
+                    <td>Fight Club</td>
+                    <td>8</td>
+                    <td>Almost perfection</td>
+                </tr>
+                <tr>
+                    <td>Predestination</td>
+                    <td>7</td>
+                    <td>Old is Gold</td>
+                </tr>
+                <tr>
+                    <td>Avatar (Blue Alien)</td>
+                    <td>9</td>
+                    <td>Cinematic Brilliance</td>
+                </tr>
+                <!-- Bollywood Movies -->
+                <tr>
+                    <td>Sholay</td>
+                    <td>9</td>
+                    <td>A timeless classic</td>
+                </tr>
+                <tr>
+                    <td>3 Idiots</td>
+                    <td>8.5</td>
+                    <td>Inspiring and heartwarming</td>
+                </tr>
+                <tr>
+                    <td>Gully Boy</td>
+                    <td>8</td>
+                    <td>Great performances, excellent music</td>
+                </tr>
+                <tr>
+                    <td>Lagaan</td>
+                    <td>9</td>
+                    <td>Historical drama at its best</td>
+                </tr>
+                <tr>
+                    <td>Dangal</td>
+                    <td>9.5</td>
+                    <td>Superb acting and motivation</td>
+                </tr>
+                <tr>
+                    <td>Andhadhun</td>
+                    <td>8.5</td>
+                    <td>Suspenseful thriller</td>
+                </tr>
+                <tr>
+                    <td>Barfi!</td>
+                    <td>8</td>
+                    <td>Beautifully crafted love story</td>
+                </tr>
+                <tr>
+                    <td>Jab We Met</td>
+                    <td>8</td>
+                    <td>Feel-good romantic comedy</td>
+                </tr>
+                <tr>
+                    <td>PK</td>
+                    <td>8.5</td>
+                    <td>Brilliant social commentary</td>
+                </tr>
+                <tr>
+                    <td>Kabhi Khushi Kabhie Gham</td>
+                    <td>8.5</td>
+                    <td>Iconic family drama</td>
+                </tr>
+                <tr>
+                    <td>Taare Zameen Par</td>
+                    <td>9</td>
+                    <td>Touching and emotional</td>
+                </tr>
+                <tr>
+                    <td>Chennai Express</td>
+                    <td>7.5</td>
+                    <td>Fun, action-filled ride</td>
+                </tr>
+                <tr>
+                    <td>Queen</td>
+                    <td>8</td>
+                    <td>Empowering journey of self-discovery</td>
+                </tr>
+                <tr>
+                    <td>Dil Chahta Hai</td>
+                    <td>8.5</td>
+                    <td>Coming-of-age movie</td>
+                </tr>
+                <!-- Hollywood Movies -->
+                <tr>
+                    <td>The Dark Knight</td>
+                    <td>10</td>
+                    <td>A masterpiece of modern cinema</td>
+                </tr>
+                <tr>
+                    <td>Inception</td>
+                    <td>9.5</td>
+                    <td>Mind-bending, thought-provoking</td>
+                </tr>
+                <tr>
+                    <td>Interstellar</td>
+                    <td>9</td>
+                    <td>A visual and emotional journey</td>
+                </tr>
+                <tr>
+                    <td>The Shawshank Redemption</td>
+                    <td>10</td>
+                    <td>A perfect blend of drama and hope</td>
+                </tr>
+                <tr>
+                    <td>Avengers: Endgame</td>
+                    <td>9</td>
+                    <td>Epic conclusion to the Marvel saga</td>
+                </tr>
+                <tr>
+                    <td>Forrest Gump</td>
+                    <td>9</td>
+                    <td>Timeless story of resilience</td>
+                </tr>
+                <tr>
+                    <td>The Godfather</td>
+                    <td>10</td>
+                    <td>A true cinematic masterpiece</td>
+                </tr>
+                <tr>
+                    <td>Parasite</td>
+                    <td>9.5</td>
+                    <td>Brilliantly crafted and socially relevant</td>
+                </tr>
+                <tr>
+                    <td>Spider-Man: No Way Home</td>
+                    <td>8.5</td>
+                    <td>Action-packed and full of surprises</td>
+                </tr>
+                <tr>
+                    <td>Jurassic Park</td>
+                    <td>8</td>
+                    <td>Groundbreaking in its time</td>
+                </tr>
+                <tr>
+                    <td>Gladiator</td>
+                    <td>9</td>
+                    <td>Powerful story of vengeance</td>
+                </tr>
+                <tr>
+                    <td>Saving Private Ryan</td>
+                    <td>9</td>
+                    <td>Gripping and emotional war drama</td>
+                </tr>
+                <tr>
+                    <td>Mad Max: Fury Road</td>
+                    <td>8.5</td>
+                    <td>High-octane action</td>
+                </tr>
+                <tr>
+                    <td>The Matrix</td>
+                    <td>9</td>
+                    <td>A genre-defining film</td>
+                </tr>
+                <tr>
+                    <td>Gladiator</td>
+                    <td>9.5</td>
+                    <td>One of the best action movies</td>
+                </tr>
+                <tr>
+                    <td>Shutter Island</td>
+                    <td>8.5</td>
+                    <td>Psychological thriller at its best</td>
+                </tr>
+                <tr>
+                    <td>Deadpool</td>
+                    <td>8</td>
+                    <td>Hilarious and action-packed</td>
+                </tr>
+                <tr>
+                    <td>The Wolf of Wall Street</td>
+                    <td>8.5</td>
+                    <td>Wild, funny, and insightful</td>
+                </tr>
+                <tr>
+                    <td>Frozen</td>
+                    <td>8</td>
+                    <td>Charming and unforgettable songs</td>
+                </tr>
+                <tr>
+                    <td>Star Wars: A New Hope</td>
+                    <td>9</td>
+                    <td>The beginning of a legendary franchise</td>
+                </tr>
+                <tr>
+                    <td>King Kong (2005)</td>
+                    <td>7.5</td>
+                    <td>Visually stunning, but lengthy</td>
+                </tr>
+                <tr>
+                    <td>Raging Bull</td>
+                    <td>9</td>
+                    <td>Gripping and intense character study</td>
+                </tr>
+                <tr>
+                    <td>The Lion King</td>
+                    <td>9</td>
+                    <td>A Disney classic</td>
+                </tr>
+                <tr>
+                    <td>Avatar: The Way of Water</td>
+                    <td>8.5</td>
+                    <td>Visually stunning, great continuation</td>
+                </tr>
+                <tr>
+                    <td>The Social Network</td>
+                    <td>8.5</td>
+                    <td>Insightful and captivating</td>
+                </tr>
+                <tr>
+                    <td>Rocketman</td>
+                    <td>8</td>
+                    <td>Excellent musical biopic</td>
+                </tr>
+                <tr>
+                    <td>Wonder Woman</td>
+                    <td>8</td>
+                    <td>Strong female lead and fun action</td>
+                </tr>
+                <tr>
+                    <td>Joker</td>
+                    <td>9</td>
+                    <td>Intense and disturbing character study</td>
+                </tr>
+                <tr>
+                    <td>Avengers: Infinity War</td>
+                    <td>8.5</td>
+                    <td>Epic and emotional superhero tale</td>
+                </tr>
+                <tr>
+                    <td>The Revenant</td>
+                    <td>8.5</td>
+                    <td>Visually breathtaking and intense</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form Section to Add New Movies -->
+    <div class="form-container">
+        <h2>Add New Movie Record</h2>
+        <form id="movie-form">
+            <input type="text" id="name-of-movie" placeholder="Name Of Movie" required>
+            <input type="text" id="rating" placeholder="Enter Rating" required>
+            <textarea id="remarks" placeholder="Remarks" required></textarea>
+            <button type="submit">Add To List</button>
+        </form>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-text">
+            <h2>About The System</h2>
+            <p>This system provides a simple and effective way to evaluate movies. You can manage names, ratings, and other remarks to access movie.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Movie List App | <a href="#">Privacy Policy</a></p>
+        <p>Made by: Sugam Sen Sinjali, Sulav Karki, and Santosh Kushwaha</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
