@@ -1,0 +1,225 @@
+/* Make the navbar sticky */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it full width */
+    background: #282a36; /* Initial background color */
+    padding: 15px 0; /* Padding for the navbar */
+    text-align: center; /* Center align the content */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    transition: background 0.3s ease, padding 0.3s ease; /* Smooth transition for background and padding */
+}
+
+/* Change navbar background color and padding on scroll */
+.navbar.scrolled {
+    background: #1e1e2e; /* Darker background when scrolled */
+    padding: 10px 0; /* Reduce padding when scrolled */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the navbar */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2e;
+    color: #fff;
+    padding-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Navbar Links */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ff79c6;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #50fa7b;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ff79c6, #bd93f9);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Search Bar */
+.search-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#search-bar {
+    padding: 12px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #44475a;
+    color: #fff;
+}
+
+/* Table */
+.table-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #282a36;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #44475a;
+    color: #50fa7b;
+    cursor: pointer;
+}
+
+th:hover {
+    background: #6272a4;
+}
+
+td {
+    background: #3b3d4a;
+    color: #f8f8f2;
+}
+
+tr:nth-child(even) td {
+    background: #43475a;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ff5555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #ff3333;
+}
+
+/* Form Section */
+.form-container {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #282a36;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #ff79c6;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: #44475a;
+    color: #fff;
+}
+
+button {
+    background: #50fa7b;
+    color: black;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #40d77b;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1e1e2e;
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #ff79c6;
+}
+
+#about p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #282a36;
+    font-size: 14px;
+    color: #bbb;
+}
+
+footer a {
+    color: #ff79c6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #50fa7b;
+}
+
+footer p {
+    margin: 5px 0;
+}
