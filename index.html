@@ -9,26 +9,27 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li> <!-- Link to Home section -->
+            <li><a href="#movies">Movies</a></li> <!-- Link to Movies section -->
+            <li><a href="#about">About</a></li> <!-- Link to About section -->
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <header>
+    <!-- Home Section -->
+    <header id="home">
         <div class="container">
             <h1>Simple Movies List</h1>
-            <p>Track movie recommendation from users.</p>
+            <p>Track movie recommendations from different users.</p>
         </div>
     </header>
 
+    <!-- Movies Section -->
     <div class="search-container">
         <input type="text" id="search-bar" placeholder="Search by movie name" >
     </div>
 
     <!-- Table Section -->
-    <div class="table-container">
+    <div class="table-container" id="movies">
         <table id="movie-table">
             <thead>
                 <tr>
@@ -301,7 +302,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Movie List App | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2025 Movie List App | <a href="https://www.freeprivacypolicy.com/">Privacy Policy (coming soon)</a></p>
         <p>Made by: Sugam Sen Sinjali, Sulav Karki, and Santosh Kushwaha</p>
     </footer>
     
