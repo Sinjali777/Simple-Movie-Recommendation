@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Make the navbar sticky */
 .navbar {
     position: fixed; /* Fix the navbar at the top */
@@ -19,16 +20,31 @@
 }
 
 /* Add padding to the body to prevent content from being hidden behind the navbar */
+=======
+/* General Styles */
+>>>>>>> 09f8e868e8eb7e15a750504b666534b1109e72e3
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1e1e2e;
     color: #fff;
+<<<<<<< HEAD
     padding-top: 80px; /* Adjust this value based on the height of your navbar */
 }
 
 /* Navbar Links */
+=======
+}
+
+/* Navbar */
+.navbar {
+    background: #282a36;
+    padding: 15px 0;
+    text-align: center;
+}
+
+>>>>>>> 09f8e868e8eb7e15a750504b666534b1109e72e3
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -222,4 +238,10 @@ footer a:hover {
 
 footer p {
     margin: 5px 0;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+>>>>>>> 09f8e868e8eb7e15a750504b666534b1109e72e3
