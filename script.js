@@ -84,29 +84,3 @@ document.querySelectorAll(".delete-btn").forEach(button => {
         this.parentElement.parentElement.remove();
     });
 });
-
-// Smooth Scrolling for Navbar Links
-document.querySelectorAll('.navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default anchor behavior
-
-        const targetId = this.getAttribute('href'); // Get the href attribute
-        const targetSection = document.querySelector(targetId); // Find the target section
-
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth' // Smooth scroll
-            });
-        }
-    });
-});
-
-// Add scroll event listener to make navbar change on scroll
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) { // Adjust this value based on when you want the effect to trigger
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
