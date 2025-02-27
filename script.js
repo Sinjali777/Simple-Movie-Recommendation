@@ -84,7 +84,6 @@ document.querySelectorAll(".delete-btn").forEach(button => {
         this.parentElement.parentElement.remove();
     });
 });
-<<<<<<< HEAD
 
 // Smooth Scrolling for Navbar Links
 document.querySelectorAll('.navbar a').forEach(anchor => {
@@ -111,5 +110,3 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
     }
 });
-=======
->>>>>>> 09f8e868e8eb7e15a750504b666534b1109e72e3
