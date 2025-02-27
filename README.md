@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 **DSA Project 4th Semester By:**
 <br>
 Sugam Sen Sinjali
@@ -21,11 +20,3 @@ Discover a smarter way to rate movies! <br> Our Movie Recommendation System lets
 🗑️ Delete: Remove outdated or unnecessary records with ease.
 
 📱 Responsive Design: Enjoy seamless compatibility across all devices.
-=======
-# Simple-Movie-Recommendation
-DSA Project 4th semester
-By:
-Sugam Sen Sinjali
-Sulav Karki
-Santosh Kushawaha
->>>>>>> 09f8e868e8eb7e15a750504b666534b1109e72e3
